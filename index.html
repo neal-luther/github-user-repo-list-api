@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Repo Depot</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -11,10 +11,17 @@
         <h1>Repo-Depot</h1>
 
         <form id="js-form">
-            <label for="search-user">Search User</label>
+            <label for="search-user">Search GitHub Username</label>
             <input type="text" name="search-term" id="js-search-term" required>
-            
+            <input type="submit" value="Go">
         </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">  
+            <h2>Search results</h2>
+            <ul id="results-list"></ul>    
+        </section>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
